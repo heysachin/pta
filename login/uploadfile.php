@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +8,6 @@
 </head>
 <body>
 <?php
-
-
-
-  session_start();
   if(!isset($_SESSION["user"] ) && !isset($_SESSION["email"]) )
   {
     header("location:index.php");
@@ -37,12 +34,6 @@ $csvformat = array(
     'application/octet-stream',
     'application/txt',
 );
-
-
-
-
-
-
  define ("filesplace","./studentdata");
  if (is_uploaded_file($_FILES['data']['tmp_name']))
  {
@@ -98,20 +89,12 @@ $csvformat = array(
               });
                 </script>";
     }
- 
-
 } 
 else
 {
     echo "Unauthorized access";
 }
-
 ?>
-
-
-
-
-
 </body>
 </html>
 

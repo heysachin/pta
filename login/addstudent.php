@@ -8,8 +8,6 @@
   {
     header("location:logout.php");
   }
-
-
 ?>
 <!DOCTYPE html>
 <html>

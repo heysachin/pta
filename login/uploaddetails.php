@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,7 @@
 </head>
 <body background="image.jpg">
 	<?php
-    session_start();
+
   if(!isset($_SESSION["user"] ) && !isset($_SESSION["email"]))
   {
     header("location:index.php");

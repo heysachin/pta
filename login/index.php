@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,18 +24,11 @@
 </head>
 <body>
 	<?php 
-    	session_start();
     	if(isset($_SESSION["user"]))
     	{
         	header("location:autologin.php");
     	}
 ?>
-     
-
-
-
-
-	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -87,11 +81,7 @@
 				</form>
 			</div>
 		</div>
-	</div>
-	
-	
-
-	
+	</div>	
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
